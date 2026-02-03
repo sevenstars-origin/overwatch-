@@ -1,0 +1,5 @@
+# ignore IDEA config folder
+.idea/
+
+# ignore vscode config folder
+.vscode/

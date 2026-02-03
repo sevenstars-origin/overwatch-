@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>init_heroes.sql</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #0033b3;}
+.s1 { color: #080808;}
+.s2 { color: #067d17;}
+.s3 { color: #1750eb;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+init_heroes.sql</font>
+</center></td></tr></table>
+<pre><span class="s0">create table </span><span class="s1">heroes(</span>
+                       <span class="s1">id </span><span class="s0">serial primary key </span><span class="s1">,</span>
+                       <span class="s0">name text not null</span><span class="s1">,</span>
+                       <span class="s0">role text</span><span class="s1">,</span>
+                       <span class="s1">win_rate </span><span class="s0">real</span>
+<span class="s1">);</span>
+<span class="s0">insert into </span><span class="s1">heroes (</span><span class="s0">name</span><span class="s1">, </span><span class="s0">role</span><span class="s1">, win_rate)</span>
+<span class="s0">values</span>
+    <span class="s1">(</span><span class="s2">'源氏'</span><span class="s1">, </span><span class="s2">'输出'</span><span class="s1">, </span><span class="s3">0.52</span><span class="s1">),</span>
+    <span class="s1">(</span><span class="s2">'莱因哈特'</span><span class="s1">, </span><span class="s2">'坦克'</span><span class="s1">, </span><span class="s3">0.49</span><span class="s1">),</span>
+    <span class="s1">(</span><span class="s2">'天使'</span><span class="s1">, </span><span class="s2">'支援'</span><span class="s1">, </span><span class="s3">0.51</span><span class="s1">);</span>
+<span class="s0">select </span><span class="s1">* </span><span class="s0">from </span><span class="s1">heroes;</span>
+<span class="s0">select </span><span class="s1">* </span><span class="s0">from </span><span class="s1">heroes </span><span class="s0">where </span><span class="s1">win_rate&gt;</span><span class="s3">50</span><span class="s1">;</span>
+<span class="s0">select </span><span class="s1">*</span><span class="s0">from </span><span class="s1">heroes </span><span class="s0">order by </span><span class="s1">win_rate </span><span class="s0">asc</span>
+<span class="s0">limit </span><span class="s3">1</span><span class="s1">;</span>
+</pre>
+</body>
+</html>

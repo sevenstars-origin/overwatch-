@@ -4,13 +4,52 @@ create table heroes(
                        role text,
                        win_rate real
 );
-insert into heroes (name, role, win_rate)
-values
-    ('源氏', '输出', 0.52),
-    ('莱因哈特', '坦克', 0.49),
-    ('天使', '支援', 0.51);
-select * from heroes;
-select name from heroes;
-select * from heroes where win_rate>50;
-select *from heroes order by win_rate asc
-limit 1;
+TRUNCATE TABLE heroes;
+INSERT INTO heroes (name, role, win_rate) VALUES
+                                              ('D.Va', 'Tank', 53.8),
+                                              ('Doomfist', 'Tank', 49.2),
+                                              ('Hazard', 'Tank', 50.5),
+                                              ('Junker Queen', 'Tank', 50.1),
+                                              ('Mauga', 'Tank', 48.6),
+                                              ('Orisa', 'Tank', 47.9),
+                                              ('Ramattra', 'Tank', 49.5),
+                                              ('Reinhardt', 'Tank', 45.2),
+                                              ('Roadhog', 'Tank', 46.8),
+                                              ('Sigma', 'Tank', 54.1),
+                                              ('Winston', 'Tank', 51.3),
+                                              ('Wrecking Ball', 'Tank', 50.8),
+                                              ('Zarya', 'Tank', 52.4);
+INSERT INTO heroes (name, role, win_rate) VALUES
+                                              ('Ashe', 'Damage', 48.5),
+                                              ('Bastion', 'Damage', 49.2),
+                                              ('Cassidy', 'Damage', 51.1),
+                                              ('Echo', 'Damage', 47.6),
+                                              ('Freja', 'Damage', 52.8),
+                                              ('Genji', 'Damage', 50.4),
+                                              ('Hanzo', 'Damage', 48.2),
+                                              ('Junkrat', 'Damage', 49.7),
+                                              ('Mei', 'Damage', 49.1),
+                                              ('Pharah', 'Damage', 51.5),
+                                              ('Reaper', 'Damage', 48.9),
+                                              ('Sojourn', 'Damage', 53.2),
+                                              ('Soldier: 76', 'Damage', 50.6),
+                                              ('Sombra', 'Damage', 47.3),
+                                              ('Symmetra', 'Damage', 51.8),
+                                              ('Torbjörn', 'Damage', 52.5),
+                                              ('Tracer', 'Damage', 52.1),
+                                              ('Vendetta', 'Damage', 54.5),
+                                              ('Venture', 'Damage', 49.8),
+                                              ('Widowmaker', 'Damage', 48.7);
+INSERT INTO heroes (name, role, win_rate) VALUES
+                                              ('Ana', 'Support', 49.3),
+                                              ('Baptiste', 'Support', 51.6),
+                                              ('Brigitte', 'Support', 52.1),
+                                              ('Illari', 'Support', 48.8),
+                                              ('Juno', 'Support', 50.2),
+                                              ('Kiriko', 'Support', 53.4),
+                                              ('Lifeweaver', 'Support', 46.1),
+                                              ('Lúcio', 'Support', 52.7),
+                                              ('Mercy', 'Support', 45.8),
+                                              ('Moira', 'Support', 49.5),
+                                              ('Wuyang', 'Support', 53.1),
+                                              ('Zenyatta', 'Support', 51.9);
